@@ -1,0 +1,138 @@
+body {
+	margin: 50px 80px;
+	font-family: "Open Sans", Helvetica, Arial, serif;
+	font-size: 1em;
+	color: #5e6a6d;
+	background-color: #edeff1;
+}
+
+h3, h4 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #5e6a6d;
+}
+
+#timeline {
+	position: relative;
+	margin: 100px 0 50px 0;
+}
+
+.vertical-line {
+	position: absolute;
+	top: 0;
+	left: 170px;
+	width: 4px;
+	height: 100%;
+	margin-left: -2px;
+	background-color: #d9dbdc;
+}
+
+.event {
+	position: relative;
+	margin-bottom: 180px;
+}
+
+.event:last-child {
+	margin-bottom: 140px;
+}
+
+.event:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.event .time, .event .detail {
+	position: relative;
+	top: 16px;
+	font-size: 1.2em;
+}
+
+.event .detail {
+	position: absolute;
+	left: 270px;
+}
+
+.circle {
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 170px;
+	width: 60px;
+	height: 60px;
+	margin-left: -30px;
+	cursor: pointer;
+	background-color: #f0f2f3;
+	border: 5px solid #ffffff;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.circle.start {
+	background-color: #00c7c6;
+	cursor: default;
+}
+
+.circle.end {
+	background-color: #fd2134;
+	cursor: default;
+}
+
+.circle i {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.7em;
+	color: #010304;
+}
+
+.bubble {
+	display: none;
+	position: absolute;
+	top: -20px;
+	left: 270px;
+	width: 350px;
+	padding: 15px 25px 0 25px;
+	background: #ffffff;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.bubble:before {
+	content: '';
+	position: absolute;
+	top: 38px;
+	right: 100%;
+	width: 0;
+	height: 0;
+	border: 12px solid transparent;
+    border-left: 12px solid #ffffff;
+    border-left-color: transparent;
+	border-right: auto;
+	border-right-color: #ffffff;
+}
+
+.bubble:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.bubble h3, .bubble h4 {
+	margin: 5px 0;
+}
+
+.bubble p {
+	margin: 0 0 30px 0;
+	color:#c0c0c0;
+}
+
+.bubble a.remaining-students {
+	display: block;
+	color: #c0c0c0;
+	text-decoration: none;
+}
+.bubble a:hover {
+	color: #5e6a6d;
+	text-decoration: underline;
+}
