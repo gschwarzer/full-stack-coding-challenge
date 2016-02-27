@@ -39,7 +39,8 @@ No need to explicitly write tests, but please test your script on several sites 
 
   commands [{
     timestamp:123456789,// timestamp
-    commandName:'Lock', // human readable command commandType:'lock', // font awesome icon name without prefix
+    commandName:'Lock', // human readable command
+    commandType:'lock', // font awesome icon name without prefix
     createdBy:1, // teacher id
     sentTo:[67,89,100] //studentids
   }]
